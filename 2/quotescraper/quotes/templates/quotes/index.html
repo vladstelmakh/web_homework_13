@@ -1,0 +1,17 @@
+<!-- quotes/templates/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Quotes Site</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to My Quotes Site</h1>
+    <p>This is the main page of my quotes website.</p>
+    <ul>
+        <li><a href="{% url 'author_list' %}">View All Authors</a></li>
+        <li><a href="{% url 'quote_list' %}">View All Quotes</a></li>
+    </ul>
+</body>
+</html>

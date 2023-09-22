@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ author.name }}</title>
+</head>
+<body>
+    <h1>{{ author.name }}</h1>
+    <h2>Quotes by {{ author.name }}</h2>
+    <ul>
+        {% for quote in quotes %}
+            <li>{{ quote.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
